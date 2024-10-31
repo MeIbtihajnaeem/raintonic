@@ -28,16 +28,6 @@ class SearchCityWidget extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10),
-          // Button to search weather for the entered city
-          // ElevatedButton.icon(
-          //   onPressed: (){},
-          //   icon: const Icon(Icons.search),
-          //   label: const Text('Search Weather'),
-          //   style: ElevatedButton.styleFrom(
-          //     padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 20),
-          //     textStyle: const TextStyle(fontSize: 16),
-          //   ),
-          // ),
         ],
       ),
     );

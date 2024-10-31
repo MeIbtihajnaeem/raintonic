@@ -27,9 +27,9 @@ class FavoriteCubit extends HydratedCubit<FavoriteState> {
     if (!state.sort) {
       cities.sort((a, b) {
         final tempA = a.weather?.current?.temperature2M ??
-            double.negativeInfinity; // Use a fallback value if null
+            double.negativeInfinity;
         final tempB = b.weather?.current?.temperature2M ??
-            double.negativeInfinity; // Use a fallback value if null
+            double.negativeInfinity;
 
         return tempA.compareTo(tempB);
       });

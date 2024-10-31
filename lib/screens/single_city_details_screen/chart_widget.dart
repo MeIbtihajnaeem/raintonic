@@ -40,13 +40,13 @@ class TemperatureChart extends StatelessWidget {
               bottomTitles: AxisTitles(
                 sideTitles: SideTitles(
                   showTitles: true,
-                  interval: 24, // Show only one label per day
+                  interval: 24,
                   getTitlesWidget: (value, meta) {
                     int index = value.toInt();
                     if (index >= 0 && index < dataPoints.length) {
                       var timeData = dataPoints[index].dateTime;
                       return Text(
-                        '${timeData.month}-${timeData.day}', // Show MM-DD for each label
+                        '${timeData.month}-${timeData.day}',
                         style: const TextStyle(fontSize: 10),
                       );
                     }

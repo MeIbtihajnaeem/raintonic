@@ -46,7 +46,6 @@ class FavoriteScreen extends StatelessWidget {
               ? state.sortedByTemperature
               : state.savedCities;
 
-          // List<CityLocationModel> cities =state.savedCities;
           return ListView.builder(
               itemCount: cities.length,
               itemBuilder: (context, index) {

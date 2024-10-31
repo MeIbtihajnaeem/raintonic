@@ -45,16 +45,14 @@ class _SplashScreenState extends State<SplashScreen>
                     height: 120,
                     margin: const EdgeInsets.symmetric(horizontal: 100),
                     decoration: BoxDecoration(
-                      color: Colors.white, // Container color
-                      borderRadius: BorderRadius.circular(
-                          20), // Adjust the radius as needed
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20),
                     ),
                     child: Center(
                       child: SizedBox(
-                        width: 150, // Adjust the width as needed
-                        height: 150, // Adjust the height as needed
-                        child: Assets.logo
-                            .image(), // Assuming Assets.logo.image() returns an Image widget
+                        width: 150,
+                        height: 150,
+                        child: Assets.logo.image(),
                       ),
                     ),
                   ),
@@ -72,20 +70,17 @@ class _SplashScreenState extends State<SplashScreen>
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontFamily: FontFamily.sfuifont,
-                        fontSize: 24, // Increased font size for prominence
-                        fontWeight:
-                            FontWeight.w900, // Extra bold weight for impact
-                        color: Styles.primaryColor, // Add a primary color
+                        fontSize: 24,
+                        fontWeight: FontWeight.w900,
+                        color: Styles.primaryColor,
                         shadows: [
                           Shadow(
                             offset: const Offset(2.0, 2.0),
                             blurRadius: 4.0,
-                            color: Colors.grey
-                                .withOpacity(0.5), // Adds a soft shadow
+                            color: Colors.grey.withOpacity(0.5),
                           ),
                         ],
-                        letterSpacing:
-                            1.5, // Slight letter spacing for a sleek look
+                        letterSpacing: 1.5,
                       ),
                     ),
                   ),
