@@ -1,0 +1,64 @@
+name: raintonic
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+icons_launcher:
+  image_path: "assets/ios_logo.png"
+  platforms:
+    android:
+      enable: true
+      image_path: "assets/ios_logo.png"
+      adaptive_background_image: "assets/background.png"
+      adaptive_foreground_image: "assets/ios_logo.png"
+      adaptive_round_image: "assets/ios_logo.png"
+      adaptive_monochrome_image: "assets/ios_logo.png"
+    ios:
+      enable: true
+      image_path: "assets/ios_logo.png"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  auto_route: ^8.1.3
+  flutter_animate: ^4.5.0
+  equatable: ^2.0.5
+  font_awesome_flutter: ^10.7.0
+  super_tooltip: ^2.0.9
+  fl_chart: ^0.69.0
+  flutter_bloc: ^8.1.6
+  string_similarity: ^2.1.1
+  hydrated_bloc: ^9.1.5
+  path_provider: ^2.1.5
+  api_repository:
+    path: repositories/api_repository
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  icons_launcher: ^2.1.7
+  build_runner:
+  auto_route_generator:
+  flutter_gen_runner:
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+  fonts:
+    - family: SFUIFONT
+      fonts:
+        - asset: assets/fonts/sf-ui-display-black-58646a6b80d5a.otf
+        - asset: assets/fonts/sf-ui-display-bold-58646a511e3d9.otf
+        - asset: assets/fonts/sf-ui-display-heavy-586470160b9e5.otf
+        - asset: assets/fonts/sf-ui-display-light-58646b33e0551.otf
+        - asset: assets/fonts/sf-ui-display-medium-58646be638f96.otf
+        - asset: assets/fonts/sf-ui-display-semibold-58646eddcae92.otf
+        - asset: assets/fonts/sf-ui-display-thin-58646e9b26e8b.otf
+        - asset: assets/fonts/sf-ui-display-ultralight-58646b19bf205.otf
+
